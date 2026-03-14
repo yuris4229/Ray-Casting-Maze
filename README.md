@@ -4,6 +4,11 @@ A simple 2.5D maze renderer implemented with ray casting.
 <br><br><br><br>
 <br><br><br><br>
 
+![Gameplay Demo](image/demo.gif)<br><br>
+
+![Maze Generator](image/maze_generating.png)<br><br>
+
+![maze](image/maze.png)<br><br>
 
 
 # 개요
@@ -55,4 +60,5 @@ A simple 2.5D maze renderer implemented with ray casting.
 따라서 이 코드는 절대로 사용자가 위에서 언급한 각도인 상태에서의 화면을 출력하지 않고, 만약 해당 각도인 경우 조금의 보정을 가합니다.<br>
 이는 사용자가 위에 해당하는 각도의 화면을 볼 수 없다는 단점이 있습니다.<br><br>
 또한, 원래의 레이캐스팅은 DDA라는 격자만을 검사하는 알고리즘을 사용해 최적화를 하지만, 이 코드에서는 광선을 일정한 조그만한 단위씩 전진시키면서 벽과 닿았는지 검사합니다.<br>
-이 코드상 엄청나게 큰 설정값을 지정하지 않는 이상 문제 없이 돌아간다고 판단하여 굳이 사용하지 않았지만, 만약 최적화가 필요한 상황이라면 DDA 알고리즘을 적용시키는 것이 좋아 보입니다.<br>
+이 코드상 엄청나게 큰 설정값을 지정하지 않는 이상 문제 없이 돌아간다고 판단하여 굳이 사용하지 않았지만, 만약 최적화가 필요한 상황이라면 DDA 알고리즘을 적용시키는 것이 좋아 보입니다.<br><br>
+또한, windows 헤더 기반의 함수들을 사용하기 때문에 리눅스에서는 실행이 
